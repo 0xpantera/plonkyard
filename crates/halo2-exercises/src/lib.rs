@@ -3,6 +3,8 @@
 //! No circuits are implemented yet. The first pass of this repository is about
 //! establishing a clean notebook-like workspace.
 
+pub mod multiplication;
+
 /// Minimal placeholder used to verify that the exercise crate compiles.
 pub fn placeholder() -> &'static str {
     plonkyard_common::workspace_name()

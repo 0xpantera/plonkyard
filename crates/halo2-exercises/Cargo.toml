@@ -6,6 +6,8 @@ license.workspace = true
 rust-version.workspace = true
 
 [dependencies]
+ff = "0.13.1"
+halo2_proofs = "0.3.2"
 plonkyard-common = { path = "../common" }
 
 [lints]
