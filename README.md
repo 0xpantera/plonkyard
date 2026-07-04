@@ -18,6 +18,10 @@ on.
 This repository is meant to support that workflow over time. It should be able
 to grow into dozens of exercises without forcing early abstractions.
 
+Chips, gadgets, helper crates, and reusable abstractions are intentionally
+delayed. They belong here only after the raw constraints feel mechanical enough
+that the abstraction teaches something instead of hiding the thing being learned.
+
 ## Philosophy
 
 Many tiny circuits:
@@ -42,34 +46,44 @@ connect it back to what the Halo2 code is doing.
 
 ## Planned Exercises
 
-These are planned exercises, not implemented features.
+Most exercise crates start as placeholders. A checked item means there is at
+least one small circuit and test for that topic.
 
-| # | Exercise |
-|---|---|
-| 1 | Multiplication |
-| 2 | Equality / Copy Constraints |
-| 3 | Boolean |
-| 4 | Bit Decomposition |
-| 5 | Conditional Select |
-| 6 | IsZero |
-| 7 | Range Check |
-| 8 | Fibonacci |
-| 9 | Lookups |
-| 10 | Poseidon |
-| 11 | Merkle Path |
+- [x] 1. Multiplication
+- [ ] 2. Equality / Copy Constraints
+- [ ] 3. Boolean
+- [ ] 4. Bit Decomposition
+- [ ] 5. Conditional Select
+- [ ] 6. IsZero
+- [ ] 7. Range Check
+- [ ] 8. Fibonacci
+- [ ] 9. Lookups
+- [ ] 10. Poseidon
+- [ ] 11. Merkle Path
 
 ## Workspace
 
 ```text
 crates/
+  01-mul/
+  02-copy/
+  03-bool/
+  04-bit-decomp/
+  05-select/
+  06-is-zero/
+  07-range/
+  08-fib/
+  09-lookups/
+  10-poseidon/
+  11-merkle-path/
   common/
-  halo2-exercises/
 docs/
 notes/
 ```
 
-`halo2-exercises` is where the small exercises will live. `common` is reserved
-for helpers that genuinely become shared across multiple exercises.
+Each exercise gets its own crate so examples can stay small, local, and easy to
+run in isolation. `common` is reserved for helpers that genuinely become shared
+across multiple exercises.
 
 ## Commands
 
@@ -80,3 +94,8 @@ just fmt
 just clippy
 ```
 
+## References
+
+- [Halo2 Book](https://zcash.github.io/halo2/)
+- [zkSecurity PLONK tutorial](https://plonk.zksecurity.xyz/1_Getting_started/1_Introduction.html)
+- [RareSkills ZK Book](https://www.rareskills.io/zk-book)
