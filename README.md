@@ -1,5 +1,8 @@
 # plonkyard
 
+[![CI](https://github.com/0xpantera/plonkyard/actions/workflows/ci.yml/badge.svg)](https://github.com/0xpantera/plonkyard/actions/workflows/ci.yml)
+[![License: MIT OR Apache-2.0](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg)](LICENSE-MIT)
+
 `plonkyard` is a Rust workspace for learning Halo2 and PLONKish proof systems
 through many tiny, self-contained exercises.
 
