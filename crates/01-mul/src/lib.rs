@@ -116,6 +116,7 @@ mod tests {
     use halo2_proofs::pasta::Fp;
 
     #[test]
+    // Correct private witness + correct public output passes.
     fn valid_witness_satisfies_constraints() {
         let a = Value::known(Fp::from(7));
         let b = Value::known(Fp::from(8));
@@ -135,6 +136,7 @@ mod tests {
     }
 
     #[test]
+    // Wrong private multiplication output fails the custom gate.
     fn wrong_output_fails_constraints() {
         let a = Value::known(Fp::from(7));
         let b = Value::known(Fp::from(8));
@@ -149,6 +151,30 @@ mod tests {
             b,
             out: circuit_out,
         };
+        let prover = MockProver::run(k, &circuit, public_inputs).unwrap();
+        assert!(prover.verify().is_err());
+    }
+
+    #[test]
+    // Correct private multiplication output + wrong public output fails the instance equality constraint.
+    // That distinction is super important because in Halo2 the public input is not “magically the output.”
+    // You assign an advice cell, then explicitly constrain it to an instance cell.
+    fn wrong_public_output_fails_constraints() {
+        let a = Value::known(Fp::from(7));
+        let b = Value::known(Fp::from(8));
+
+        let private_out = Fp::from(56);
+        let public_out = Fp::from(55);
+
+        let circuit = MulCircuit {
+            a,
+            b,
+            out: Value::known(private_out),
+        };
+
+        let public_inputs = vec![vec![public_out]];
+        let k = 4;
+
         let prover = MockProver::run(k, &circuit, public_inputs).unwrap();
         assert!(prover.verify().is_err());
     }
