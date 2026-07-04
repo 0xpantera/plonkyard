@@ -40,9 +40,11 @@ Many tiny circuits:
 The initial path is staged:
 
 1. Write small raw Halo2 circuits with minimal abstraction.
-2. Refactor repeated patterns into Chips once the raw version is understood.
-3. Study lookups as their own topic instead of mixing them into early examples.
-4. Build real gadgets after the smaller pieces feel mechanical.
+2. Work through the RareSkills-style homework path: custom gates, selectors,
+   equality, constants, public inputs, and bit decomposition.
+3. Refactor repeated patterns into Chips once the raw version is understood.
+4. Study lookups as their own topic instead of mixing them into early examples.
+5. Build real gadgets after the smaller pieces feel mechanical.
 
 In parallel, the notes will track the zkSecurity PLONK tutorial vocabulary and
 connect it back to what the Halo2 code is doing.
@@ -52,34 +54,44 @@ connect it back to what the Halo2 code is doing.
 Most exercise crates start as placeholders. A checked item means there is at
 least one small circuit and test for that topic.
 
-- [x] 1. Multiplication
-- [ ] 2. Equality / Copy Constraints
-- [ ] 3. Boolean
-- [ ] 4. Bit Decomposition
-- [ ] 5. Conditional Select
-- [ ] 6. IsZero
-- [ ] 7. Range Check
-- [ ] 8. Fibonacci
-- [ ] 9. Lookups
-- [ ] 10. Poseidon
-- [ ] 11. Merkle Path
+- [x] 01. Multiplication
+- [ ] 02. Add Five Rows
+- [ ] 03. Add/Mul Selectors
+- [ ] 04. High-Degree Gate
+- [ ] 05. Instance Column
+- [ ] 06. Fibonacci, One Advice Column
+- [ ] 07. Boolean
+- [ ] 08. Bit Decomposition
+- [ ] 09. Range 0..16
+- [ ] 10. Fibonacci Constants
+- [ ] 11. Fibonacci Public Output
+- [ ] 12. Arithmetic Chip
+- [ ] 13. IsZero Chip
+- [ ] 14. Polynomial `a^5 + a = b`
+- [ ] 15. XOR-32
 
 ## Workspace
 
 ```text
 crates/
   01-mul/
-  02-copy/
-  03-bool/
-  04-bit-decomp/
-  05-select/
-  06-is-zero/
-  07-range/
-  08-fib/
-  09-lookups/
-  10-poseidon/
-  11-merkle-path/
+  02-add-five-rows/
+  03-add-mul-selectors/
+  04-high-degree-gate/
+  05-instance-column/
+  06-fib-one-column/
+  07-bool/
+  08-bit-decomp/
+  09-range-0-16/
+  10-fib-constants/
+  11-fib-public-output/
+  12-arithmetic-chip/
+  13-is-zero-chip/
+  14-polynomial-a5-plus-a/
+  15-xor-32/
   common/
+bootcamp/
+  rareskills/
 docs/
 notes/
 ```
