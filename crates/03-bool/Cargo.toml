@@ -1,14 +1,11 @@
 [package]
-name = "halo2-exercises"
+name = "plonkyard-03-bool"
 version = "0.1.0"
 edition.workspace = true
 license.workspace = true
 rust-version.workspace = true
 
 [dependencies]
-ff = "0.13.1"
-halo2_proofs = "0.3.2"
-plonkyard-common = { path = "../common" }
 
 [lints]
 workspace = true

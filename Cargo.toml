@@ -1,7 +1,17 @@
 [workspace]
 members = [
+    "crates/01-mul",
+    "crates/02-copy",
+    "crates/03-bool",
+    "crates/04-bit-decomp",
+    "crates/05-select",
+    "crates/06-is-zero",
+    "crates/07-range",
+    "crates/08-fib",
+    "crates/09-lookups",
+    "crates/10-poseidon",
+    "crates/11-merkle-path",
     "crates/common",
-    "crates/halo2-exercises",
 ]
 resolver = "2"
 
