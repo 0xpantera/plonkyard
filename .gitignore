@@ -1,5 +1,5 @@
 /target/
 Cargo.lock
+AGENTS.md
 *.rs.bk
 .DS_Store
-
