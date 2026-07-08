@@ -55,9 +55,9 @@ Most exercise crates start as placeholders. A checked item means there is at
 least one small circuit and test for that topic.
 
 - [x] 01. Multiplication
-- [ ] 02. Add Five Rows
-- [ ] 03. Add/Mul Selectors
-- [ ] 04. High-Degree Gate
+- [x] 02. Add Five Rows
+- [x] 03. Add/Mul Selectors
+- [x] 04. High-Degree Gate
 - [ ] 05. Instance Column
 - [ ] 06. Fibonacci, One Advice Column
 - [ ] 07. Boolean
