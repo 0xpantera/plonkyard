@@ -15,6 +15,11 @@ members = [
     "crates/13-is-zero-chip",
     "crates/14-polynomial-a5-plus-a",
     "crates/15-xor-32",
+    "crates/16-lookup-xor-8",
+    "crates/17-lookup-add-carry-16",
+    "crates/18-lookup-add-chunks-32",
+    "crates/19-fixed-automaton-lookup",
+    "crates/20-generic-automaton-lookup-any",
     "crates/common",
 ]
 resolver = "2"

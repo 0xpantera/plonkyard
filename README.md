@@ -58,9 +58,9 @@ least one small circuit and test for that topic.
 - [x] 02. Add Five Rows
 - [x] 03. Add/Mul Selectors
 - [x] 04. High-Degree Gate
-- [ ] 05. Instance Column
-- [ ] 06. Fibonacci, One Advice Column
-- [ ] 07. Boolean
+- [x] 05. Instance Column
+- [x] 06. Fibonacci, One Advice Column
+- [x] 07. Boolean
 - [ ] 08. Bit Decomposition
 - [ ] 09. Range 0..16
 - [ ] 10. Fibonacci Constants
@@ -69,6 +69,11 @@ least one small circuit and test for that topic.
 - [ ] 13. IsZero Chip
 - [ ] 14. Polynomial `a^5 + a = b`
 - [ ] 15. XOR-32
+- [ ] 16. Lookup XOR-8
+- [ ] 17. Lookup Addition with 16-bit Carry
+- [ ] 18. Chunked 32-bit Addition
+- [ ] 19. Fixed Automaton Lookup
+- [ ] 20. Generic Automaton Advice Lookup
 
 ## Workspace
 
@@ -89,6 +94,11 @@ crates/
   13-is-zero-chip/
   14-polynomial-a5-plus-a/
   15-xor-32/
+  16-lookup-xor-8/
+  17-lookup-add-carry-16/
+  18-lookup-add-chunks-32/
+  19-fixed-automaton-lookup/
+  20-generic-automaton-lookup-any/
   common/
 bootcamp/
   rareskills/

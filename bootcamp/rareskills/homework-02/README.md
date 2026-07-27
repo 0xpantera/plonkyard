@@ -3,10 +3,10 @@
 ## Status
 
 - `01-mul`: completed separately as the multiplication warmup.
-- Homework 2 Problem 1: planned.
-- Homework 2 Problem 2: planned.
-- Homework 2 Problem 3: planned.
-- Instance-column challenge: planned.
+- Homework 2 Problem 1: completed.
+- Homework 2 Problem 2: completed.
+- Homework 2 Problem 3: completed.
+- Instance-column challenge: completed.
 
 ## Problems
 
@@ -42,4 +42,3 @@ same assignment or selector pattern repeats enough to become distracting.
 
 Problem 2 should make selector placement visible: the point is not just having
 two gates, but understanding which rows each gate actually constrains.
-

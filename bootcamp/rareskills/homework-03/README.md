@@ -2,9 +2,9 @@
 
 ## Status
 
-- Problem 1: planned.
-- Problem 2: planned.
-- Explicit bit witnesses variant: planned.
+- Problem 1: completed.
+- Problem 2: in progress.
+- Explicit bit witnesses variant: in progress.
 - Internally computed bit witnesses variant: planned.
 
 ## Problems
@@ -44,4 +44,3 @@ version after the constraints are clear.
 
 The selector placement in Fibonacci is part of the exercise. Enabling the
 recurrence gate on every row would incorrectly query beyond the intended trace.
-
