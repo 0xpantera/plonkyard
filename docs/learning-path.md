@@ -20,7 +20,7 @@ Current tiny-exercise path:
 | `05-instance-column` | Done | Homework 2 challenge |
 | `06-fib-one-column` | Done | Homework 3 Problem 1 |
 | `07-bool` | Done | Homework 3 Problem 2 subconstraint |
-| `08-bit-decomp` | In progress | Homework 3 Problem 2 |
+| `08-bit-decomp` | Done | Homework 3 Problem 2 |
 | `09-range-0-16` | Planned | Homework 3 Problem 2 |
 | `10-fib-constants` | Planned | Homework 4 Problem 1 |
 | `11-fib-public-output` | Planned | Homework 4 challenge |

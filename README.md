@@ -61,7 +61,7 @@ least one small circuit and test for that topic.
 - [x] 05. Instance Column
 - [x] 06. Fibonacci, One Advice Column
 - [x] 07. Boolean
-- [ ] 08. Bit Decomposition
+- [x] 08. Bit Decomposition
 - [ ] 09. Range 0..16
 - [ ] 10. Fibonacci Constants
 - [ ] 11. Fibonacci Public Output

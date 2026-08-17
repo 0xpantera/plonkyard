@@ -4,7 +4,7 @@
 
 - Problem 1: completed.
 - Problem 2: in progress.
-- Explicit bit witnesses variant: in progress.
+- Explicit bit witnesses variant: completed.
 - Internally computed bit witnesses variant: planned.
 
 ## Problems
